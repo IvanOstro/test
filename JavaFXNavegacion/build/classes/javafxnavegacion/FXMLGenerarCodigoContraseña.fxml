@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxnavegacion.FXMLGenerarCodigoContraseñaController">
+   <children>
+      <GridPane layoutY="-14.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-14.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.8" minWidth="10.0" prefWidth="192.8" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.79998779296875" minWidth="10.0" prefWidth="216.8" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.20001220703125" minWidth="10.0" prefWidth="201.79995117187502" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.20001220703125" minWidth="10.0" prefWidth="181.800048828125" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2">
+               <children>
+                  <Text fx:id="titulo" strokeType="OUTSIDE" strokeWidth="0.0" text="Generar Contraseña">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <children>
+                  <Label fx:id="labelintroducircode" text="Introduzca su codigo:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <TextField fx:id="fieldcode" prefHeight="26.0" prefWidth="230.0" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="botongenerarcodigo" defaultButton="true" mnemonicParsing="false" onAction="#metodogenerarcodigo" prefHeight="46.0" prefWidth="150.0" text="Generar codigo" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="botonconfirmar" mnemonicParsing="false" onAction="#metodoconfirmar" prefHeight="46.0" prefWidth="150.0" text="Confirmar" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <children>
+                  <Button fx:id="botoniniciarsesion" mnemonicParsing="false" onAction="#metodoiniciarsesion" prefHeight="46.0" prefWidth="150.0" text="Volver a iniciar sesión" />
+               </children>
+            </HBox>
+            <Text fx:id="mensaje_usuario" fill="#0004ff" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="202.93670654296875" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <children>
+                  <Text fx:id="contraseña_usuario" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="410.1366767883301" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
